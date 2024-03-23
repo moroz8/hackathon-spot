@@ -34,6 +34,7 @@ def main():
     sdk = bosdyn.client.create_standard_sdk('UploadChoreography')
     sdk.register_service_client(ChoreographyClient)
     robot = sdk.create_robot(ROBOT_IP)
+    robot.authenticate(SPOT_USERNAME, SPOT_PASSWORD) 
     bosdyn.client.util.authenticate(robot)
 
     license_client = robot.ensure_client(LicenseClient.default_service_name)
