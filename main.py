@@ -7,6 +7,7 @@ ROBOT_IP = "10.0.0.3"#os.environ['ROBOT_IP']
 SPOT_USERNAME = "admin"#os.environ['SPOT_USERNAME']
 SPOT_PASSWORD = "2zqa8dgw7lor"#os.environ['SPOT_PASSWORD']
 
+BUCKET_TOCKEN = "eyJpZCI6IDEsICJ2YWwiOiAiMUtfMmdGeUdHaVBMVGJGVlZKbUZTS25uRVh0RDBoVlNkQW5pTE5kR213VEkxUXdZSXBNekhLQlFBSG9zMmF0UzU5dExLeEVBZmRBNFpHbWNyeTRvTlEifQ=="
 
 def capture_image():
     camera_capture = cv2.VideoCapture(0)
